@@ -1,11 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/myll1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="11111111" />'
-</LinearLayout>
+        android:background="@color/firstColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_temperature"
+            style="@style/style_text"
+            android:layout_marginLeft="30dp"
+            android:text="@string/temperature"
+            android:textSize="42sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_cityname"
+                style="@style/style_text"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/city" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                style="@style/style_text"
+                android:layout_marginTop="5dp"
+                android:text="@string/info" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_direct"
+                    style="@style/style_text1"
+                    android:text="@string/direct" />
+
+                <TextView
+                    android:id="@+id/tv_power"
+                    style="@style/style_text2"
+                    android:text="@string/power" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/humidityname" />
+
+                <TextView
+                    android:id="@+id/tv_humidity"
+                    style="@style/style_text2"
+                    android:text="@string/humidity" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/pm25name" />
+
+                <TextView
+                    android:id="@+id/tv_pm25"
+                    style="@style/style_text2"
+                    android:text="@string/pm25" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/quality" />
+
+                <TextView
+                    android:id="@+id/tv_quality"
+                    style="@style/style_text2"
+                   />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/humidityname" />
+
+                <TextView
+
+                    style="@style/style_text2"
+                    android:text="@string/humidity" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/pm25name" />
+
+                <TextView
+
+                    style="@style/style_text2"
+                    android:text="@string/pm25" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myll1"></ListView>
+
+
+</RelativeLayout>

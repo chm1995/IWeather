@@ -19,7 +19,6 @@ public class AttentionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View mView = inflater.inflate(R.layout.fragment_attention, container, false);//关联布局文件
-
         return mView;
     }
 }

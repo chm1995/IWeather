@@ -10,6 +10,6 @@ import retrofit2.http.Query;
  */
 
 public interface WeatherApi {
-    @GET("v2/weatherforecast/{accesskey}/{citycode}")
-    Call<WeatherDataBean> getWeather(@Path("accesskey") String accesskey, @Path("citycode") int citycode);
+    @GET("Weather/Query")
+    Call<WeatherDataBean> getWeather(@Query("key") String accesskey,@Query("cityname") String cityname);
 }

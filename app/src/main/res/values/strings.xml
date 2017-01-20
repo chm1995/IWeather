@@ -1,14 +1,9 @@
 <resources>
     <string name="app_name">IWeather</string>
-    <string name="city">- -</string>
-    <string name="temperature">- -</string>
+    <string name="empty">- -</string>
     <string name="date">00:00:00</string>
-    <string name="info">- -</string>
-    <string name="humidityname">湿度</string>
-    <string name="humidity">- -</string>
-    <string name="power">- -</string>
-    <string name="direct">- -</string>
-    <string name="pm25name">pm</string>
-    <string name="pm25">- -</string>
+    <string name="humidity">湿度</string>
+    <string name="pm10">PM10</string>
+    <string name="pm25">PM2.5</string>
     <string name="quality">空气质量</string>
 </resources>

@@ -15,7 +15,7 @@
             android:id="@+id/tv_temperature"
             style="@style/style_text"
             android:layout_marginLeft="30dp"
-            android:text="@string/temperature"
+            android:text="@string/empty"
             android:textSize="42sp"
             android:layout_marginTop="10dp"
             />
@@ -32,13 +32,13 @@
                 style="@style/style_text"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:text="@string/city" />
+                android:text="@string/empty" />
 
             <TextView
                 android:id="@+id/tv_info"
                 style="@style/style_text"
                 android:layout_marginTop="5dp"
-                android:text="@string/info" />
+                android:text="@string/empty" />
         </LinearLayout>
 
 
@@ -60,12 +60,12 @@
                 <TextView
                     android:id="@+id/tv_direct"
                     style="@style/style_text1"
-                    android:text="@string/direct" />
+                    android:text="@string/empty" />
 
                 <TextView
                     android:id="@+id/tv_power"
                     style="@style/style_text2"
-                    android:text="@string/power" />
+                    android:text="@string/empty" />
 
             </LinearLayout>
 
@@ -78,12 +78,12 @@
 
                 <TextView
                     style="@style/style_text1"
-                    android:text="@string/humidityname" />
+                    android:text="@string/humidity" />
 
                 <TextView
                     android:id="@+id/tv_humidity"
                     style="@style/style_text2"
-                    android:text="@string/humidity" />
+                    android:text="@string/empty" />
             </LinearLayout>
 
             <LinearLayout
@@ -95,12 +95,12 @@
 
                 <TextView
                     style="@style/style_text1"
-                    android:text="@string/pm25name" />
+                    android:text="@string/pm25" />
 
                 <TextView
                     android:id="@+id/tv_pm25"
                     style="@style/style_text2"
-                    android:text="@string/pm25" />
+                    android:text="@string/empty" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -125,6 +125,7 @@
                 <TextView
                     android:id="@+id/tv_quality"
                     style="@style/style_text2"
+                    android:text="@string/empty"
                    />
 
             </LinearLayout>
@@ -138,30 +139,15 @@
 
                 <TextView
                     style="@style/style_text1"
-                    android:text="@string/humidityname" />
+                    android:text="@string/pm10" />
 
                 <TextView
-
+                     android:id="@+id/tv_pm10"
                     style="@style/style_text2"
-                    android:text="@string/humidity" />
+                    android:text="@string/empty" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
 
-                <TextView
-                    style="@style/style_text1"
-                    android:text="@string/pm25name" />
-
-                <TextView
-
-                    style="@style/style_text2"
-                    android:text="@string/pm25" />
-            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

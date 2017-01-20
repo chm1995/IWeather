@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment {
     private String url = "http://api.avatardata.cn/";
     private String key = "5cc7321863d44842b2c366a15ed6c89c";
     private String cityname = "长沙";
-    public TextView tv_cityname, tv_temperature, tv_info, tv_humidity, tv_power, tv_direct, tv_pm25;
+    public TextView tv_cityname, tv_temperature, tv_info, tv_humidity, tv_power, tv_direct, tv_pm25,tv_pm10,tv_quality;
     ListView mylistview;
 
 
@@ -50,6 +50,8 @@ public class HomeFragment extends Fragment {
         tv_power = (TextView) mView.findViewById(R.id.tv_power);//风级  如:3级
         tv_direct = (TextView) mView.findViewById(R.id.tv_direct);//风向
         tv_pm25 = (TextView) mView.findViewById(R.id.tv_pm25);//pm2.5
+        tv_pm10=(TextView) mView.findViewById(R.id.tv_pm10);//pm10
+        tv_quality=(TextView) mView.findViewById(R.id.tv_quality);//空气质量
         mylistview = (ListView) mView.findViewById(R.id.mylist);
     }
 
@@ -80,7 +82,8 @@ public class HomeFragment extends Fragment {
                 tv_temperature.setText(mWeatherBean.getTemperature()+"℃");
 
                 tv_pm25.setText(mpm25.getPm25());
-
+                tv_pm10.setText(mpm25.getPm10());
+                tv_quality.setText(mpm25.getQuality());
             }
 
             @Override
